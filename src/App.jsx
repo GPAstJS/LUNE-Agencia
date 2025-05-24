@@ -120,7 +120,7 @@ export const App = () => {
           e tecnologia.
         </p>
 
-        <div className="grid   sm:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-[3rem] py-[4rem]">
+        <div className="grid   sm:grid-cols-1 xl:flex xl:justify-center xl:flex-wrap 2xl:grid-cols-3 gap-[3rem] py-[4rem]">
           {cards.map((e, i) => {
             return (
               <Card
@@ -154,7 +154,7 @@ export const App = () => {
           e tecnologia.
         </p>
 
-        <div className="grid  sm:grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 gap-[3rem] py-[5rem]">
+        <div className="grid  sm:grid-cols-1 lg:flex lg:justify-center xl:flex-wrap  2xl:grid-cols-3 gap-[3rem] py-[5rem]">
           {products.map((e, i) => {
             return (
               <Card
@@ -169,8 +169,8 @@ export const App = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col  xl:flex-row items-center justify-around py-[5rem] px-[2rem] md:px-0 ">
-        <div className="bg-[#191818]  w-full md:w-[35rem]  h-[35rem] flex flex-col items-center justify-center rounded-[15px] py-[5rem] px-[2rem] gap-y-[3rem] ">
+      <div className="w-full flex flex-col  xl:flex-row items-center justify-around py-[5rem] px-[2rem] md:px-0 2xl:px-[8rem] ">
+        <div className="bg-[#191818]  w-full md:w-[35rem]  h-[35rem] flex flex-col items-center justify-center rounded-[15px] py-[5rem] px-[2rem]  gap-y-[3rem] ">
           <input
             className="border-white border-[1px] w-full h-[5rem] text-[#fff] font-bold outline-none px-[2rem] rounded-[5px]"
             placeholder="Nome"
