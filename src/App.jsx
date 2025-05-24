@@ -70,18 +70,18 @@ export const App = () => {
   return (
     <div className=" flex flex-col items-center  font-poppins">
       <Header />
-      <div className="w-full flex flex-col 2xl:flex-row items-center justify-around text-white sm:mt-[5rem] 2xl:mt-[15rem]  sm:px-[2rem]  ">
+      <div className="w-full flex flex-col 2xl:flex-row items-center justify-around text-white sm:mt-[5rem] 2xl:mt-[15rem]  p-[2rem]  ">
         <div className="flex flex-col  items-start gap-y-[1rem] z-0">
-          <p className="text-[4rem] leading-[4rem] font-bold">
+          <p className="text-[3rem]   leading-[4rem] font-bold">
             LUNE TECNOLOGIA <br />
             CRIATIVA
           </p>
 
-          <p className="text-[1.75rem] font-bold">
+          <p className="text-[1.5rem] sm:text-[1.75rem] font-bold">
             Transformamos Ideias em Realidade Digital
           </p>
 
-          <p className="text-[1.65rem]">
+          <p className="text-[1.5rem] sm:text-[1.65rem]">
             Precisa de um{" "}
             <span className="text-purple-bright font-bold">
               site profissional, branding marcante <br />
@@ -91,7 +91,7 @@ export const App = () => {
               presença digital forte?
             </span>
           </p>
-          <p className="text-[1.65rem]">
+          <p className="text-[1.5rem] sm:text-[1.65rem]">
             A Lune cria soluções
             <span className="font-bold"> sob medida para você</span>.
           </p>
@@ -102,35 +102,35 @@ export const App = () => {
 
         <img
           id="spin-moon"
-          className="sm:h-[450px] md:h-[500px]"
+          className="sm:h-[450px] md:h-[500px] py-[2rem] sm:py-0"
           src={Moon450}
           alt="Spinning Moon"
         />
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center py-[10rem]">
+      <div className="w-full flex flex-col items-center justify-center py-[10rem] px-[2rem] sm:px-0">
         <div className="flex gap-x-[1rem] items-center">
           <div className="bg-purple-bright h-[10px] w-[45px]"></div>
 
-          <p className="text-[2rem] text-white font-bold">
+          <p className=" text-[1.25rem] text-center sm:text-start sm:text-[2rem] text-white font-bold">
             POR QUE ESCOLHER A LUNE?
           </p>
 
           <div className="bg-purple-bright h-[10px] w-[45px]"></div>
         </div>
 
-        <p className="text-[1.25rem] text-white text-center max-w-[35rem]">
+        <p className="text-[1rem] sm:text-[1.25rem] text-white text-center max-w-[35rem]">
           Contamos com uma equipe criativa e especializada, desenvolvendo
           projetos personalizados para cada cliente, sempre com foco em inovação
           e tecnologia.
         </p>
 
-        <div className="flex sm:flex-col md:flex-row gap-[3rem] py-[4rem]">
+        <div className="grid sm:grid-cols-1 2xl:grid-cols-3 gap-[3rem] py-[4rem]">
           {cards.map((e, i) => {
             return (
               <Card
                 key={i}
-                className={"card h-[42rem] w-[30rem] sm:items-center md:items-start justify-between p-[4rem]"}
+                className={"card h-[42rem] w-[30rem] 2xl:w-[27rem] sm:items-center md:items-start justify-between p-[4rem]"}
                 icon={e.icon}
                 title={e.title}
                 text={e.text}
@@ -144,23 +144,24 @@ export const App = () => {
         </button>
       </div>
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center px-[2rem] sm:px-0">
         <div className="flex gap-x-[1rem] items-center">
           <div className="bg-purple-bright h-[10px] w-[45px]"></div>
 
-          <p className="text-[2rem] text-white font-bold">
+          <p className=" text-[1.25rem] text-center sm:text-start sm:text-[2rem] text-white font-bold">
             POR QUE ESCOLHER A LUNE?
           </p>
 
           <div className="bg-purple-bright h-[10px] w-[45px]"></div>
         </div>
 
-        <p className="text-white text-[1.25rem] text-center w-[27rem]">
-          Descubra nossos principais serviços e encontre a solução ideal para o
-          seu projeto.
+        <p className="text-[1rem] sm:text-[1.25rem] text-white text-center max-w-[35rem]">
+          Contamos com uma equipe criativa e especializada, desenvolvendo
+          projetos personalizados para cada cliente, sempre com foco em inovação
+          e tecnologia.
         </p>
 
-        <div className="grid  sm:grid-cols-1 md:grid-cols-3 gap-[3rem] py-[5rem]">
+        <div className="grid  sm:grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 gap-[3rem] py-[5rem]">
           {products.map((e, i) => {
             return (
               <Card
@@ -175,8 +176,8 @@ export const App = () => {
         </div>
       </div>
 
-      <div className="w-full flex sm:flex-col md:flex-row items-center justify-around py-[5rem] ">
-        <div className="bg-[#191818] w-[35rem] h-[35rem] flex flex-col items-center justify-center rounded-[15px] py-[5rem] px-[2rem] gap-y-[3rem]">
+      <div className="w-full flex flex-col  xl:flex-row items-center justify-around py-[5rem] px-[2rem] md:px-0 ">
+        <div className="bg-[#191818]  w-full md:w-[35rem]  h-[35rem] flex flex-col items-center justify-center rounded-[15px] py-[5rem] px-[2rem] gap-y-[3rem] ">
           <input
             className="border-white border-[1px] w-full h-[5rem] text-[#fff] font-bold outline-none px-[2rem] rounded-[5px]"
             placeholder="Nome"
