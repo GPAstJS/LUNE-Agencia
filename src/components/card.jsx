@@ -7,9 +7,11 @@ export const Card = ({ className, icon, title, text }) => {
     >
       {icon}
 
+      <div className="flex flex-col gap-y-[2rem] text-center md:text-start">
       <p className="font-bold text-[2rem]">{title}</p>
 
       <p className="text-[1.5rem]">{text}</p>
+      </div>
     </div>
   );
 };

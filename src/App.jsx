@@ -56,45 +56,42 @@ export const App = () => {
       text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
     },
     {
-      icon: <LuSmartphone className="svg w-[4rem] h-[4rem] " />,
-      title: "Identidade Visual",
-      text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
-    },
-    {
       icon: <BsShop className="svg w-[4rem] h-[4rem] " />,
       title: "Identidade Visual",
       text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
     },
+
   ];
 
   return (
     <div className=" flex flex-col items-center  font-poppins">
       <Header />
-      <div className="w-full flex flex-col 2xl:flex-row items-center justify-around text-white sm:mt-[5rem] 2xl:mt-[15rem]  p-[2rem]  ">
-        <div className="flex flex-col  items-start gap-y-[1rem] z-0">
-          <p className="text-[3rem]   leading-[4rem] font-bold">
-            LUNE TECNOLOGIA <br />
-            CRIATIVA
-          </p>
+      <div className="w-full flex flex-col 2xl:flex-row items-center 2xl:justify-around justify-evenly text-white sm:mt-[2rem]   p-[2rem]  ">
+        <div className="flex flex-col  items-center 2xl:items-start gap-y-[1rem] z-0 px-[1rem]  2xl:px-[4rem]">
+          <div className="flex flex-col ">
+            <p className="text-[2.5rem] text-center 2xl:text-start sm:text-[3rem] 2xl:text-[5rem] leading-[3rem] 2xl:leading-[5rem]  sm:leading-[3rem] font-bold">
+              LUNE TECNOLOGIA <br />
+              CRIATIVA
+            </p>
 
-          <p className="text-[1.5rem] sm:text-[1.75rem] font-bold">
-            Transformamos Ideias em Realidade Digital
-          </p>
+            <p className="text-[1.25rem] text-center md:text-start sm:text-[1.50rem] font-bold">
+              Transformamos Ideias em Realidade Digital
+            </p>
+          </div>
 
-          <p className="text-[1.5rem] sm:text-[1.65rem]">
+          <p className="text-[1.25rem] leading-[1.25rem] sm:leading-[1.5rem]  text-center 2xl:text-start   sm:text-[1.5rem]">
             Precisa de um{" "}
             <span className="text-purple-bright font-bold">
-              site profissional, branding marcante <br />
+              site profissional, <br /> branding marcante
             </span>
-            <span className="font-bold">ou </span>
+            <span className="font-bold">{" "} ou </span>
             <span className="text-purple-bright font-bold">
-              presença digital forte?
+              presença digital forte? <br />
             </span>
-          </p>
-          <p className="text-[1.5rem] sm:text-[1.65rem]">
             A Lune cria soluções
-            <span className="font-bold"> sob medida para você</span>.
+            <span className="font-bold "> sob medida para você</span>.
           </p>
+
           <button className="cursor-pointer hover:scale-[1.2] duration-200 h-[4rem] px-[1.50rem] rounded-full font-bold tracking-widest bg-linear-to-r from-gradientstart to-gradientend">
             NOSSO PORTFÓLIO
           </button>
@@ -102,35 +99,33 @@ export const App = () => {
 
         <img
           id="spin-moon"
-          className="sm:h-[450px] md:h-[500px] py-[2rem] sm:py-0"
+          className=" h-[425px] sm:h-[450px] md:h-[500px] py-[2rem] "
           src={Moon450}
           alt="Spinning Moon"
         />
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center py-[10rem] px-[2rem] sm:px-0">
-        <div className="flex gap-x-[1rem] items-center">
-          <div className="bg-purple-bright h-[10px] w-[45px]"></div>
+      <div className="w-full flex flex-col items-center justify-center py-[2rem]  px-[2rem] md:px-0">
+        <div className="flex  items-center">
 
-          <p className=" text-[1.25rem] text-center sm:text-start sm:text-[2rem] text-white font-bold">
+          <p className=" text-[1rem] text-center sm:text-start sm:text-[2rem]  text-white font-bold">
             POR QUE ESCOLHER A LUNE?
           </p>
 
-          <div className="bg-purple-bright h-[10px] w-[45px]"></div>
         </div>
 
-        <p className="text-[1rem] sm:text-[1.25rem] text-white text-center max-w-[35rem]">
+        <p className="text-[1rem] sm:text-[1.25rem] text-white px-[2rem] sm:px-0 text-center max-w-[35rem]">
           Contamos com uma equipe criativa e especializada, desenvolvendo
           projetos personalizados para cada cliente, sempre com foco em inovação
           e tecnologia.
         </p>
 
-        <div className="grid sm:grid-cols-1 2xl:grid-cols-3 gap-[3rem] py-[4rem]">
+        <div className="grid   sm:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-[3rem] py-[4rem]">
           {cards.map((e, i) => {
             return (
               <Card
                 key={i}
-                className={"card h-[42rem] w-[30rem] 2xl:w-[27rem] sm:items-center md:items-start justify-between p-[4rem]"}
+                className={"card h-[42rem] w-[30rem] 2xl:w-[27rem] items-center md:items-start justify-between p-[4rem]"}
                 icon={e.icon}
                 title={e.title}
                 text={e.text}
@@ -145,17 +140,15 @@ export const App = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center px-[2rem] sm:px-0">
-        <div className="flex gap-x-[1rem] items-center">
-          <div className="bg-purple-bright h-[10px] w-[45px]"></div>
+        <div className="flex  items-center">
 
-          <p className=" text-[1.25rem] text-center sm:text-start sm:text-[2rem] text-white font-bold">
+          <p className=" text-[rem] text-center sm:text-start sm:text-[2rem]  text-white font-bold">
             POR QUE ESCOLHER A LUNE?
           </p>
 
-          <div className="bg-purple-bright h-[10px] w-[45px]"></div>
         </div>
 
-        <p className="text-[1rem] sm:text-[1.25rem] text-white text-center max-w-[35rem]">
+        <p className="text-[1rem] sm:text-[1.25rem] text-white px-[2rem] sm:px-0 text-center max-w-[35rem]">
           Contamos com uma equipe criativa e especializada, desenvolvendo
           projetos personalizados para cada cliente, sempre com foco em inovação
           e tecnologia.

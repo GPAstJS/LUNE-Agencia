@@ -27,9 +27,9 @@ const Header = () => {
     }} className="w-full  h-[7.5rem] flex items-center justify-around text-white  z-99  ">
       <img className="w-[12.5rem] cursor-pointer" src={Logo} alt="Logo Here" />
 
-      {width < 768 && <IoMenuSharp className="w-[2rem] h-[2rem]" />}
+      {width < 1024 && <IoMenuSharp className="w-[2rem] h-[2rem]" />}
 
-      {width >= 768 && (
+      {width >= 1024 && (
         <nav className="flex">
           {navButtons.map((e, i) => {
             return (
