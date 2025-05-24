@@ -10,6 +10,10 @@
   --shadow-card: 0px 0px 40px rgba(138, 43, 226, 1);
 }
 
+* {
+  font-family: "Poppins", "sans-serif";
+}
+
 html {
   scroll-behavior: smooth;
   background-image: linear-gradient(#2D2838, #000000);
