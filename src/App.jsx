@@ -18,17 +18,17 @@ import { Card } from "./components/card";
 export const App = () => {
   const cards = [
     {
-      icon: <BsBrush className={` svg h-[2rem] w-[2rem] sm:w-[4rem] sm:h-[4rem]`} />,
+      icon: <BsBrush className={` svg h-[2rem] w-[2rem] xs:h-[3rem] xs:w-[3rem] sm:w-[4rem] sm:h-[4rem]`} />,
       title: "Design Gráfico & UI/UX",
       text: "Destaque sua marca com um design poderoso! Criamos identidades visuais únicas, profissionais e memoráveis, que transmitem autenticidade e fortalecem sua presença no mercado. Do logotipo ao branding completo, ajudamos sua empresa a se destacar e conquistar a confiança do seu público.",
     },
     {
-      icon: <FaCode className={` svg h-[2rem] w-[2rem] sm:w-[4rem] sm:h-[4rem]`} />,
+      icon: <FaCode className={` svg h-[2rem] w-[2rem] xs:h-[3rem] xs:w-[3rem]  sm:w-[4rem] sm:h-[4rem]`} />,
       title: "Design Gráfico & UI/UX",
       text: "Destaque sua marca com um design poderoso! Criamos identidades visuais únicas, profissionais e memoráveis, que transmitem autenticidade e fortalecem sua presença no mercado. Do logotipo ao branding completo, ajudamos sua empresa a se destacar e conquistar a confiança do seu público.",
     },
     {
-      icon: <FaInstagram className={` svg h-[2rem] w-[2rem] sm:w-[4rem] sm:h-[4rem]`} />,
+      icon: <FaInstagram className={` svg h-[2rem] w-[2rem] xs:h-[3rem] xs:w-[3rem]  sm:w-[4rem] sm:h-[4rem]`} />,
       title: "Design Gráfico & UI/UX",
       text: "Destaque sua marca com um design poderoso! Criamos identidades visuais únicas, profissionais e memoráveis, que transmitem autenticidade e fortalecem sua presença no mercado. Do logotipo ao branding completo, ajudamos sua empresa a se destacar e conquistar a confiança do seu público.",
     },
@@ -36,27 +36,27 @@ export const App = () => {
 
   const products = [
     {
-      icon: <IoEyeOutline className="svg w-[4rem] h-[4rem] " />,
+      icon: <IoEyeOutline className="svg h-[2rem]  xs:h-[3rem] xs:w-[3rem]  w-[2rem] sm:w-[4rem] sm:h-[4rem] " />,
       title: "Identidade Visual",
       text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
     },
     {
-      icon: <BsKanban className={` svg h-[2rem] w-[2rem] sm:w-[4rem] sm:h-[4rem]`} />,
+      icon: <BsKanban className={` svg h-[2rem] w-[2rem] xs:h-[3rem] xs:w-[3rem] sm:w-[4rem] sm:h-[4rem]`} />,
       title: "Identidade Visual",
       text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
     },
     {
-      icon: <BsKanban className={` svg h-[2rem] w-[2rem] sm:w-[4rem] sm:h-[4rem]`} />,
+      icon: <BsKanban className={` svg h-[2rem] w-[2rem]  xs:h-[3rem] xs:w-[3rem]  sm:w-[4rem] sm:h-[4rem]`} />,
       title: "Identidade Visual",
       text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
     },
     {
-      icon: <FaLaptop className={` svg h-[2rem] w-[2rem] sm:w-[4rem] sm:h-[4rem]`} />,
+      icon: <FaLaptop className={` svg h-[2rem] w-[2rem] xs:h-[3rem] xs:w-[3rem]  sm:w-[4rem] sm:h-[4rem]`} />,
       title: "Identidade Visual",
       text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
     },
     {
-      icon: <BsShop className={` svg h-[2rem] w-[2rem] sm:w-[4rem] sm:h-[4rem]`} />,
+      icon: <BsShop className={` svg h-[2rem] w-[2rem] xs:h-[3rem] xs:w-[3rem]  sm:w-[4rem] sm:h-[4rem]`} />,
       title: "Identidade Visual",
       text: "Desenvolvimento de logotipos, paleta de cores e materiais gráficos. ",
     },
@@ -99,7 +99,7 @@ export const App = () => {
 
         <img
           id="spin-moon"
-          className="h-[250px]  sm:h-[450px] md:h-[500px] py-[2rem] "
+          className="h-[250px] xs:h-[400px]  sm:h-[450px] md:h-[500px] py-[2rem] "
           src={Moon450}
           alt="Spinning Moon"
         />
@@ -125,7 +125,7 @@ export const App = () => {
             return (
               <Card
                 key={i}
-                className={"card h-[22rem] w-[16rem]   sm:h-[42rem] sm:w-[30rem] 2xl:w-[27rem] items-center md:items-start justify-between p-[2rem] sm:p-[4rem]"}
+                className={"card h-[22rem] w-[16rem] xs:h-[25rem] xs:w-[25rem]   sm:h-[37rem] sm:w-[30rem] 2xl:w-[27rem] items-center md:items-start justify-between p-[2rem] sm:p-[4rem]"}
                 icon={e.icon}
                 title={e.title}
                 text={e.text}
@@ -159,7 +159,7 @@ export const App = () => {
             return (
               <Card
                 key={i}
-                className={"card h-[12.5rem] w-[12.5rem] sm:h-[25rem] sm:w-[25rem] items-center text-center"}
+                className={"card h-[12.5rem] w-[12.5rem] xs:w-[15rem] xs:h-[15rem] sm:h-[25rem] sm:w-[25rem] items-center text-center"}
                 icon={e.icon}
                 title={e.title}
                 text={e.text}

@@ -8,9 +8,9 @@ export const Card = ({ className, icon, title, text }) => {
       {icon}
 
       <div className="flex flex-col gap-y-[1rem] sm:gap-y-[2rem] text-center md:text-start">
-      <p className="font-bold text-[1rem] sm:text-[2rem]">{title}</p>
+      <p className="font-bold text-[1rem] xs:text-[1.25rem] sm:text-[2rem]">{title}</p>
 
-      <p className=" text-[0.75rem] sm:text-[1.5rem]">{text}</p>
+      <p className=" text-[0.75rem] xs:text-[1rem] sm:text-[1.25rem]">{text}</p>
       </div>
     </div>
   );
